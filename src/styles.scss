@@ -1,0 +1,900 @@
+@import './components/styles/_variety';
+.app {
+  width: 100%;
+  padding-top: 68px;
+
+  .home_wrapper {
+    background-color: $primary_bg;
+    width: 100%;
+    // padding: 170px 0px 301px 0px;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .polygon1 {
+      position: absolute;
+      left: -18.49px;
+      top: 150.75px;
+    }
+    .polygon2 {
+      position: absolute;
+      left: 518px;
+      top: -50.12px;
+    }
+    .polygon3 {
+      position: absolute;
+      left: 900.3px;
+      top: 70px;
+    }
+    .polygon4 {
+      position: absolute;
+      left: 0px;
+      top: 500.12px;
+    }
+
+    .polygon5 {
+      position: absolute;
+      left: 536px;
+      top: 500.12px;
+    }
+    .polygon6 {
+      position: absolute;
+      left: 832px;
+      top: 550.12px;
+    }
+
+    .polygon7 {
+      position: absolute;
+      left: 1160px;
+      top: 480.12px;
+    }
+
+    .home_text {
+      width: 65%;
+      margin: auto;
+
+      h1 {
+        color: $primary_color;
+        font-size: 38px;
+
+        span {
+          color: $x_secondary_color;
+        }
+      }
+
+      .medium_p {
+        width: 100%;
+        color: $primary_color;
+        margin-top: 8px;
+        span {
+          color: $x_secondary_color;
+        }
+      }
+      .hire_me_btn {
+        width: 266px;
+        height: 55px;
+        margin-top: 64px;
+      }
+    }
+  }
+
+  .about_me_wrapper {
+    width: 100%;
+    background-color: $secondary_bg;
+    padding: 80px 0px 200px 0px;
+
+    .sub_container {
+      display: flex;
+      justify-content: space-between;
+      width: 65%;
+      margin: auto;
+      flex-wrap: wrap;
+      .text_container {
+        width: 52%;
+
+        .about_me_header {
+          color: $secondary_color;
+        }
+
+        p {
+          color: $x_primary_color;
+          margin-bottom: 20px;
+          word-spacing: 2px;
+          font-size: 15px;
+        }
+
+        .btn_container {
+          width: 100%;
+          text-align: center;
+          .download_resume_btn {
+            background-color: transparent;
+            width: 313px;
+            height: 47px;
+            color: $secondary_color;
+
+            border: 2px solid $x_secondary_color;
+          }
+        }
+      }
+      .image_container {
+        width: 42%;
+        // height: 500px;
+        // background-color: $btn_bg;
+        // border-radius: 20px;
+        // margin-top: 50px;
+
+        img {
+          position: relative;
+          bottom: 30px;
+
+          width: 100%;
+          margin-top: 50px;
+          -webkit-box-shadow: 29px 37px 0px 8px rgba(39, 24, 126, 1);
+          -moz-box-shadow: 29px 37px 0px 8px rgba(39, 24, 126, 1);
+          box-shadow: 29px 37px 0px 8px rgba(39, 24, 126, 1);
+
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .my_works_wrapper {
+    width: 100%;
+    background-color: $primary_bg;
+
+    // padding: 80px 0 120px 0;
+    .sub_container {
+      width: 65%;
+      height: 420px;
+      padding-top: 100px;
+      margin: auto;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      overflow: hidden;
+      .my_works_header {
+        color: $primary_color;
+      }
+      .lines {
+        width: 15%;
+      }
+
+      .works {
+        margin-top: 52px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+        .each_work {
+          position: relative;
+          width: 100%;
+          height: 300px;
+          img {
+            width: 100%;
+            border-radius: 12px;
+            height: 300px;
+          }
+
+          &:hover {
+            .work_text {
+              position: absolute;
+              background: rgba(11, 1, 56, 0.521);
+              bottom: 0px;
+              color: $primary_color;
+              padding: 10px 20px;
+              height: 230px;
+              overflow: hidden;
+              transition-duration: 0.5s;
+              transition-timing-function: ease-in-out;
+              border-radius: 0px 0px 12px 12px;
+              cursor: pointer;
+
+              .medium_p {
+                color: $x_secondary_color;
+              }
+
+              a {
+                text-decoration: none;
+                color: $primary_color;
+                transition: all 0.1s ease-in-out;
+                &:hover {
+                  color: $x_secondary_color;
+                  transition: all 0.5s ease-in-out;
+                }
+              }
+              .project_icon {
+                transform: scale(1.5);
+              }
+            }
+          }
+          .work_text {
+            position: absolute;
+            background: rgba(11, 1, 56, 0.521);
+            bottom: 0px;
+            color: $primary_color;
+            padding: 0px 20px;
+            height: 0px;
+            overflow: hidden;
+            transition-duration: 0.1s;
+            transition-timing-function: ease-in-out;
+            border-radius: 0px 0px 12px 12px;
+
+            .medium_p {
+              color: $x_secondary_color;
+            }
+            .project_icon {
+              transform: scale(1.5);
+            }
+          }
+        }
+      }
+    }
+
+    .extend_works_sub_container {
+      height: 1100px;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      overflow: hidden;
+    }
+    .btn_container {
+      width: 100%;
+      text-align: center;
+      margin-top: 62px;
+      .see_all_projects_btn {
+        width: 325px;
+        height: 55px;
+      }
+    }
+  }
+  .contact_me_wrapper {
+    width: 100%;
+    background-color: $primary_bg;
+    padding: 150px 0 120px 0;
+    .sub_container {
+      width: 65%;
+      margin: auto;
+
+      .contact_me_header {
+        color: $primary_color;
+      }
+
+      .lines {
+        width: 15%;
+      }
+
+      .sub_container {
+        background-color: $x_secondary_bg;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        .large_p {
+          color: $primary_color;
+          text-align: center;
+          width: 608px;
+          margin: auto;
+          padding-top: 37px;
+        }
+
+        .form {
+          text-align: center;
+          margin-top: 52px;
+
+          .input_div {
+            margin-bottom: 24px;
+            label {
+              width: 70%;
+              padding-bottom: 4px;
+              margin: auto;
+              display: block;
+              text-align: left;
+              color: $primary_color;
+            }
+            input {
+              width: 70%;
+              padding: 0;
+              border-width: 0px;
+              background-color: $secondary_bg;
+              padding: 17px 0px 17px 17px;
+              border-radius: 12px;
+              &:focus-visible {
+                outline: 0;
+              }
+            }
+
+            textarea {
+              width: 70%;
+              padding: 0;
+              border-width: 0px;
+              background-color: $secondary_bg;
+              padding: 17px 0px 17px 17px;
+              border-width: 0px;
+              height: 309px;
+              border-radius: 12px;
+              &:focus-visible {
+                outline: 0;
+              }
+            }
+
+            .error_message {
+              width: 70%;
+              margin: auto;
+              font-size: 12px;
+              color: red;
+              text-align: left;
+            }
+          }
+
+          .send_btn {
+            margin: 28px 0px 36px 0px;
+            background-color: $btn_bg;
+            width: 72%;
+            padding: 16px 0px;
+          }
+        }
+
+        .form_send_modal {
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+
+          z-index: 300;
+          display: none;
+        }
+
+        .modal_visible {
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: #03071ecc;
+          z-index: 300;
+          display: block;
+
+          .form_send_modal_sub_container {
+            width: 15%;
+            font-size: 12px;
+            text-align: center;
+            margin: auto;
+            padding: 10px 20px;
+            background-color: $secondary_bg;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 10px black;
+            -webkit-box-shadow: 0px 2px 57px -9px rgba(2, 1, 20, 1);
+            -moz-box-shadow: 0px 2px 57px -9px rgba(2, 1, 20, 1);
+            box-shadow: 0px 2px 57px -9px rgba(2, 1, 20, 1);
+
+            .loading {
+              color: $x_secondary_color;
+              letter-spacing: 2px;
+            }
+            .sent {
+              color: green;
+              letter-spacing: 2px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 0px;
+    .home_wrapper {
+      // padding: 120px 0px 100px 0px;
+      height: 500px;
+
+      .polygon1 {
+        position: absolute;
+        left: -18.49px;
+        top: 50.75px;
+      }
+      .polygon2 {
+        position: absolute;
+        left: 318px;
+        top: 0.12px;
+        width: 100px;
+        height: 100px;
+      }
+      .polygon3 {
+        position: absolute;
+        left: 600.3px;
+        top: 176px;
+        width: 100px;
+        height: 100px;
+      }
+      .polygon4 {
+        position: absolute;
+        left: 0px;
+        top: 400.12px;
+      }
+
+      .home_text {
+        width: 90%;
+
+        h1 {
+          color: $primary_color;
+
+          span {
+            color: $x_secondary_color;
+          }
+
+          .addresser {
+            display: none;
+          }
+        }
+
+        .medium_p {
+          width: 90%;
+          color: $primary_color;
+          margin-top: 8px;
+          span {
+            color: $x_secondary_color;
+          }
+        }
+      }
+    }
+
+    .about_me_wrapper {
+      width: 100%;
+      background-color: $secondary_bg;
+      padding: 80px 0px 100px 0px;
+
+      .sub_container {
+        width: 90%;
+
+        .text_container {
+          width: 55%;
+
+          .about_me_header {
+            color: $secondary_color;
+          }
+
+          p {
+            color: $x_primary_color;
+            margin-bottom: 25px;
+          }
+        }
+        .image_container {
+          width: 40%;
+
+          img {
+            position: relative;
+            bottom: 30px;
+            right: 20px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .my_works_wrapper {
+      .sub_container {
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        .my_works_header {
+          color: $primary_color;
+        }
+        .lines {
+          width: 15%;
+        }
+
+        .works {
+          margin-top: 52px;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          .each_work {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            img {
+              width: 100%;
+              border-radius: 12px;
+              height: 280px;
+            }
+            .work_text {
+              position: absolute;
+              background: rgba(11, 1, 56, 0.521);
+              bottom: 0px;
+              height: 190px;
+              color: $primary_color;
+              padding: 10px 10px;
+              border-radius: 0px 0px 12px 12px;
+
+              .medium_p {
+                color: $x_secondary_color;
+                line-height: 20px;
+              }
+              .small_p {
+                line-height: 20px;
+              }
+              .project_icon {
+                transform: scale(1.5);
+              }
+            }
+            &:hover {
+              .work_text {
+                padding: 10px 10px;
+                height: 190px;
+
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .extend_works_sub_container {
+        height: 1030px;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        overflow: hidden;
+      }
+      .btn_container {
+        width: 100%;
+        text-align: center;
+        margin-top: 62px;
+        .see_all_projects_btn {
+          width: 325px;
+          height: 55px;
+        }
+      }
+    }
+    .contact_me_wrapper {
+      width: 100%;
+      background-color: $primary_bg;
+      padding: 0px 0 120px 0;
+      .sub_container {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+
+        .contact_me_header {
+          color: $primary_color;
+        }
+
+        .lines {
+          width: 15%;
+        }
+
+        .sub_container {
+          background-color: $x_secondary_bg;
+          width: 90%;
+          margin: auto;
+          margin-top: 50px;
+          .large_p {
+            color: $primary_color;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            padding-top: 0px;
+          }
+
+          .modal_visible {
+            .form_send_modal_sub_container {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
+    .home_wrapper {
+      height: 500px;
+
+      .polygon1 {
+        position: absolute;
+        left: -18.49px;
+        top: 50.75px;
+      }
+      .polygon2 {
+        position: absolute;
+        left: 218px;
+        top: 0.12px;
+        width: 100px;
+        height: 100px;
+      }
+      .polygon3 {
+        position: absolute;
+        left: 700.3px;
+        top: 176px;
+        width: 100px;
+        height: 100px;
+      }
+      .polygon4 {
+        position: absolute;
+        left: 0px;
+        top: 500.12px;
+      }
+
+      .home_text {
+        width: 85%;
+
+        h1 {
+          color: $primary_color;
+
+          span {
+            color: $x_secondary_color;
+          }
+
+          .addresser {
+            display: none;
+          }
+        }
+
+        .medium_p {
+          width: 90%;
+          color: $primary_color;
+          margin-top: 8px;
+          span {
+            color: $x_secondary_color;
+          }
+        }
+        .hire_me_btn {
+          width: 100%;
+          height: 55px;
+          margin-top: 64px;
+        }
+      }
+    }
+
+    .about_me_wrapper {
+      width: 100%;
+      background-color: $secondary_bg;
+      padding: 40px 0px 100px 0px;
+
+      .sub_container {
+        display: block;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+
+        .lines {
+          width: 15%;
+        }
+        .text_container {
+          width: 100%;
+          position: relative;
+
+          .about_me_header {
+            color: $secondary_color;
+          }
+
+          .header_sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: $secondary_color;
+            z-index: 100;
+
+            width: 100%;
+            .about_me_header {
+              color: $primary_color;
+            }
+          }
+
+          p {
+            color: $x_primary_color;
+            margin-bottom: 25px;
+          }
+
+          .btn_container {
+            .download_resume_btn {
+              width: 100%;
+            }
+          }
+        }
+        .image_container {
+          display: none;
+        }
+      }
+    }
+
+    .my_works_wrapper {
+      width: 100%;
+      background-color: $primary_bg;
+      // padding: 30px 0 50px 0;
+      .sub_container {
+        width: 80%;
+        height: 650px;
+
+        margin: auto;
+        .my_works_header {
+          color: $primary_color;
+        }
+        .lines {
+          width: 15%;
+        }
+
+        .header_sticky {
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: $secondary_color;
+          z-index: 200;
+
+          width: 100%;
+        }
+
+        .works {
+          margin-top: 52px;
+          width: 100%;
+          display: grid;
+          grid-template-columns: auto;
+
+          .each_work {
+            position: relative;
+            width: 100%;
+            height: 270px;
+            img {
+              width: 100%;
+              border-radius: 12px;
+              height: 270px;
+            }
+            .work_text {
+              position: absolute;
+              background: rgba(11, 1, 56, 0.521);
+              bottom: 0px;
+              color: $primary_color;
+              padding: 10px 10px;
+              height: 53%;
+              border-radius: 0px 0px 12px 12px;
+              @media screen and (max-width: 320px) {
+                height: 63%;
+              }
+              .medium_p {
+                color: $x_secondary_color;
+                line-height: 20px;
+              }
+
+              .small_p {
+                line-height: 15px;
+              }
+              .project_icon {
+                transform: scale(1.5);
+              }
+            }
+
+            &:hover {
+              .work_text {
+                position: absolute;
+                background: rgba(11, 1, 56, 0.521);
+                bottom: 0px;
+                color: $primary_color;
+                padding: 10px 10px;
+                height: 53%;
+                border-radius: 0px 0px 12px 12px;
+                @media screen and (max-width: 320px) {
+                  height: 63%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .extend_works_sub_container {
+        height: 1875px;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        overflow: hidden;
+      }
+      .btn_container {
+        width: 100%;
+
+        .see_all_projects_btn {
+          width: 80%;
+          height: 55px;
+        }
+      }
+    }
+    .contact_me_wrapper {
+      width: 100%;
+      background-color: $primary_bg;
+      padding: 50px 0 100px 0;
+      .sub_container {
+        width: 80%;
+        margin: auto;
+        padding-top: 50px;
+
+        .contact_me_header {
+          color: $primary_color;
+        }
+        .header_sticky {
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: $secondary_color;
+          z-index: 300;
+
+          width: 100%;
+        }
+
+        .lines {
+          width: 15%;
+        }
+
+        .sub_container {
+          background-color: $x_secondary_bg;
+          width: 98%;
+          margin: auto;
+          margin-top: 50px;
+          .large_p {
+            color: $primary_color;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            padding-top: 0px;
+          }
+
+          .form {
+            text-align: center;
+            margin-top: 52px;
+
+            .input_div {
+              margin-bottom: 24px;
+              label {
+                width: 80%;
+                padding-bottom: 4px;
+                margin: auto;
+                display: block;
+                text-align: left;
+                color: $primary_color;
+              }
+              input {
+                width: 80%;
+                padding: 0;
+                border-width: 0px;
+                background-color: $secondary_bg;
+                padding: 17px 0px 17px 17px;
+                border-radius: 12px;
+                &:focus-visible {
+                  outline: 0;
+                }
+              }
+
+              textarea {
+                width: 80%;
+                padding: 0;
+                border-width: 0px;
+                background-color: $secondary_bg;
+                padding: 17px 0px 17px 17px;
+                border-width: 0px;
+                height: 309px;
+                border-radius: 12px;
+                &:focus-visible {
+                  outline: 0;
+                }
+              }
+            }
+
+            .send_btn {
+              margin: 28px 0px 36px 0px;
+              background-color: $btn_bg;
+              width: 72%;
+              padding: 16px 0px;
+            }
+          }
+          .modal_visible {
+            .form_send_modal_sub_container {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

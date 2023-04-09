@@ -1,0 +1,51 @@
+import { GithubOutlined } from '@ant-design/icons';
+export const Data = [
+  {
+    id: 1,
+    name: 'Gastrown',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque ipsam modi odit provident praesentium illo? Enim dolorem doloribus sit atque voluptate blanditiis reiciendis quo quas, molestias id! Sunt, doloribus.',
+    img: '../images/work1.png',
+    icon: <GithubOutlined className='project_icon' />,
+    link: 'https://gastrown.com/',
+  },
+  {
+    id: 2,
+    name: 'Online shopping system',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque ipsam modi odit provident praesentium illo? Enim dolorem doloribus sit atque voluptate blanditiis reiciendis quo quas, molestias id! Sunt, doloribus.',
+    img: '../images/work2.png',
+    icon: <GithubOutlined className='project_icon' />,
+    link: 'https://de-addresser-mall.netlify.app/',
+  },
+  {
+    id: 3,
+    name: 'Weather application',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque ipsam modi odit provident praesentium illo? Enim dolorem doloribus sit atque voluptate blanditiis reiciendis quo quas, molestias id! Sunt, doloribus.',
+    img: '../images/work3.png',
+    icon: <GithubOutlined className='project_icon' />,
+    link: 'https://weatherapplicationz.netlify.app/',
+  },
+  {
+    id: 4,
+    name: 'Project 4',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque ipsam modi odit provident praesentium illo? Enim dolorem doloribus sit atque voluptate blanditiis reiciendis quo quas, molestias id! Sunt, doloribus.',
+    img: '../images/project_image.jpg',
+    icon: <GithubOutlined className='project_icon' />,
+    link: '#',
+  },
+  {
+    id: 5,
+    name: 'Project5',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque ipsam modi odit provident praesentium illo? Enim dolorem doloribus sit atque voluptate blanditiis reiciendis quo quas, molestias id! Sunt, doloribus.',
+    img: '../images/project_image.jpg',
+    icon: <GithubOutlined className='project_icon' />,
+    link: '#',
+  },
+  {
+    id: 6,
+    name: 'Project 6',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque ipsam modi odit provident praesentium illo? Enim dolorem doloribus sit atque voluptate blanditiis reiciendis quo quas, molestias id! Sunt, doloribus.',
+    img: '../images/project_image.jpg',
+    icon: <GithubOutlined className='project_icon' />,
+    link: '#',
+  },
+];

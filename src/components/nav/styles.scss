@@ -1,0 +1,56 @@
+@import '../styles/_variety.scss';
+.nav_wrapper {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  background-color: $secondary_bg;
+
+  .nav_menu {
+    width: 55%;
+    margin-left: auto;
+    margin-top: 29px;
+
+    li {
+      display: inline;
+      margin-right: 72px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.005em;
+      padding-bottom: 2px;
+      cursor: pointer;
+    }
+    li:hover {
+      border: 0px;
+      border-bottom: 3px solid;
+      border-color: $x_secondary_color;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #03071e;
+    }
+  }
+  .active {
+    border: 0px;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+    border-color: $x_secondary_color;
+  }
+
+  .icons {
+    color: $x_secondary_color;
+    margin-right: 2px;
+  }
+  @media screen and (max-width: 1439px) {
+    .nav_menu {
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}

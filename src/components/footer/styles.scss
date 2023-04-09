@@ -1,0 +1,29 @@
+@import '../styles/variety';
+.footer_wrapper {
+  width: 100%;
+  padding: 48px 0px 50px 0px;
+  text-align: center;
+  background-color: $footer_bg;
+  .connect_container {
+    margin-bottom: 24px;
+    .small_p {
+      color: $secondary_color;
+      margin-right: 8px;
+    }
+    a {
+      position: relative;
+      top: 6px;
+      margin-right: 16px;
+    }
+  }
+
+  .x-small_p {
+    color: $secondary_color;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+  }
+}
