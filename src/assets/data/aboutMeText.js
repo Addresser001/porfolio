@@ -7,7 +7,7 @@ export const AboutMeText = () => {
       of the major web development technologies and become one of the Top web
       developer in the world, and now, I am working towards it!
       <p>
-        I'm a National Diploma (ND) holder (HND in-view), in Computer Science,
+        I'm a Higher National Diploma holder (HND), in Computer Science,
         previously a participant in Zuri x I4G Training
       </p>
       <p>

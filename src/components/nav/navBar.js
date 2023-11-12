@@ -22,7 +22,7 @@ const Navigation = () => {
   const items = [
     {
       label: (
-        <Link to='home' spy={true} smooth={true} offset={-100} duration={500}>
+        <Link to='home'   >
           <HomeOutlined className='icons' />
           Home
         </Link>

@@ -102,8 +102,9 @@
         p {
           color: $x_primary_color;
           margin-bottom: 20px;
-          word-spacing: 2px;
-          font-size: 15px;
+          word-spacing: 3px;
+          font-size: 16px;
+          line-height: 30px;
         }
 
         .btn_container {
@@ -121,10 +122,6 @@
       }
       .image_container {
         width: 42%;
-        // height: 500px;
-        // background-color: $btn_bg;
-        // border-radius: 20px;
-        // margin-top: 50px;
 
         img {
           position: relative;
@@ -146,7 +143,6 @@
     width: 100%;
     background-color: $primary_bg;
 
-    // padding: 80px 0 120px 0;
     .sub_container {
       width: 65%;
       height: 420px;
@@ -178,11 +174,28 @@
             border-radius: 12px;
             height: 300px;
           }
+          .image_caption {
+            position: absolute;
+            color: $primary_color;
+            top: 50px;
+            left: 50px;
+            opacity: 1;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+          }
 
           &:hover {
+            .image_caption {
+              position: absolute;
+              top: 50px;
+              left: 50px;
+              opacity: 0;
+              transition-duration: 0.5s;
+              transition-timing-function: ease-in-out;
+            }
             .work_text {
               position: absolute;
-              background: rgba(11, 1, 56, 0.521);
+              background: rgba(0, 9, 19, 0.705);
               bottom: 0px;
               color: $primary_color;
               padding: 10px 20px;
@@ -591,6 +604,9 @@
   }
 
   @media screen and (max-width: 767px) {
+    .image_caption {
+      display: none;
+    }
     margin-top: 0px;
     .home_wrapper {
       height: 500px;

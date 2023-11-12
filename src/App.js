@@ -9,6 +9,8 @@ import {
   Polygon6,
   Polygon7,
 } from './components/svg';
+
+import profile_pic from './assets/images/my_pic.jpg';
 import { motion, useScroll } from 'framer-motion';
 import { Element, Link } from 'react-scroll';
 import resume from '../src/assets/files/resume.pdf';
@@ -132,22 +134,14 @@ function App() {
         if (data.status === 200) {
           setMessageLoading(false);
           setMessageStatus(true);
-          // setTimeout(() => {
-          //   window.location.reload();
-          // }, 4000);
         } else {
           setMessageLoading(false);
           setMessageStatus(false);
-          // setTimeout(() => {
-          //   window.location.reload();
-          // }, 4000);
         }
       });
 
     setFormSendModal(true);
   };
-
-  // const [field, meta] = useField();
 
   return (
     <div className='app'>
@@ -225,7 +219,7 @@ function App() {
             </div>
           </div>
           <div className='image_container'>
-            <img src='./images/profile_image.png' alt='Profile Image' />
+            <img src={profile_pic} alt='Profile Image' />
           </div>
         </div>
       </div>
@@ -253,7 +247,8 @@ function App() {
               const { id, name, desc, img, icon, link } = datum;
               return (
                 <div key={id} className='each_work display'>
-                  <img src={img} alt='Project image' />
+                  <img src='/images/work_img.png' alt='Project image' />
+                  <h2 className='image_caption medium_p'>{name}</h2>
                   <a href={link} target='_blank'>
                     <div className='work_text '>
                       <p className='medium_p'>{name}</p>
